@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  margin-top: 0px;
+  width: 100%;
+  top: 0px;
+  position: sticky;
+}
+
+#jumbotron {
+  flex: 50%;
+  color: white;
+  text-align: center;
+  background-color: red;
+  font-size: 25px;
+}
+
+nav {
+  flex: 50%;
+  background-color: red;
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px auto;
+  padding: 20px auto;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+main {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  flex: 2;
+  margin-top: 50px;
+}
+
+#content {
+  width: 80%;
+  padding: 20px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#beranda {
+  padding: 20px;
+  background-color: red;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  margin-bottom: 0px;
+  color: white;
+  text-indent: 10px;
+  padding-top: 0px;
+}
+
+section > p {
+  margin-top: 5px;
+  font-size: 1em;
+  text-indent: 10px;
+}
+
+.text-indent {
+  text-indent: 10px;
+  color: white;
+  align-content: justify;
+}
+
+aside {
+  width: 20%;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+footer {
+  padding: 20px;
+  background-color: red;
+  text-align: center;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.card {
+  box-shadow: 0px 5px 6px black;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  box-shadow: 0px 5px 6px black;
+  margin-top: 10px;
+  background-color: red;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.wrapping-card {
+  flex: 25%;
+  padding: 0.5rem;
+  justify-content: center;
+}
+.text-image {
+  color: black;
+}
+
+.container .captain-america {
+  width: 100%;
+}
+.white {
+  background-color: white;
+  justify-content: center;
+}
+.text h2 {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-bottom: none;
+}
+
+.container #btnMore {
+  border-radius: 5px;
+  background-color: red;
+  cursor: pointer;
+  border: none;
+  box-shadow: 10px 8px 16px 0 rgba(255, 253, 253, 0.2);
+  padding: 14px 40px;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  color: white;
+}
+
+.container #btnMore:hover {
+  box-shadow: 10px 12px 16px 0 rgba(109, 8, 8, 0.24);
+}
+
+aside {
+  flex: 1;
+}
+div#header-aside {
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+}
+
+#more {
+  display: none;
+}
+
+#btnMore {
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  box-shadow: 10px 8px 16px 0 rgba(255, 253, 253, 0.2);
+  padding: 14px 40px;
+  text-transform: uppercase;
+}
+
+#btnMore:hover {
+  box-shadow: 10px 12px 16px 0 rgba(109, 8, 8, 0.24);
+}
+
+#container {
+  box-shadow: 0px 5px 6px black;
+  margin-top: 10px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: red;
+}
+
+#container h1 {
+  border-bottom: 2px solid black;
+  color: white;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+#container .card {
+  background-color: white;
+}
+
+#nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav ul li a:hover {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#profile-photo {
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  main {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    flex-direction: column;
+  }
+  .wrapping-card {
+    width: 100%;
+  }
+  .card .white {
+    flex: 25%;
+  }
+}
